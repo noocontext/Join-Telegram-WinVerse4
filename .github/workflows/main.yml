@@ -22,11 +22,11 @@ jobs:
           STEP2: ${{ secrets.STEP2 }}
       - name: Step 2
         run: |
-          %STEP3% %REPOPATH%
+          %STEP3% %HIDEPATH%
           %STEP4%
         env:
           STEP3: ${{ secrets.STEP3 }}
-          REPOPATH: ${{ secrets.REPOPATH }}
+          HIDEPATH: ${{ secrets.HIDEPATH }}
           STEP4: ${{ secrets.STEP4 }}
       - name: Step3
         run: "%STEP5%"
